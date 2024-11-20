@@ -1,6 +1,7 @@
 import React from "react";
+import MinutesEmoji from "./Minutes";
 
-function Article({title, date, preview}) {
+function Article({title, date, preview, minutes}) {
     return (
         <div id="article">
         <article>
@@ -12,6 +13,9 @@ function Article({title, date, preview}) {
             </small>
             <p>
                 {preview}
+            </p>
+            <p>
+                <MinutesEmoji minutes={minutes} />
             </p>
         </article>
         </div>
